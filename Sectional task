@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+ <style>
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      width: 100%;
+      background: repeating-linear-gradient(90deg, rgb(5, 5, 5) 4px, #ffffff 125px);
+    }
+
+    .navbar {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 1;
+      padding: 15px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    ul {
+      list-style: none;
+
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin: 0.2rem;
+    }
+
+    .navbar ul li a {
+      color: black;
+      font-size: medium;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-blend-mode: darken;
+      background: linear-gradient(150deg, rgba(233, 31, 35, 1) 180px, rgba(217, 46, 243, 0.861), rgb(35, 0, 110));
+      padding-bottom: 100px;  
+      opacity: 0.99;
+      backdrop-filter: invert(70%);
+      z-index: 0;
+    }
+
+    .container img {
+      height: 200px;
+      background: transparent;
+      border: 10px solid #FFF;
+      border-radius: 50%;
+
+
+    }
+
+
+    .login h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 3rem;
+    }
+
+    .login {
+      width: 600px;
+      padding: 30px;
+      padding-top: 156px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .login__field {
+      padding: 20px 0px;
+      position: relative;
+    }
+
+    i {
+      font-style: normal;
+      margin-right: 20px;
+      font-weight: 700;
+      font-size: large;
+    }
+
+    .login__icon {
+      position: absolute;
+      top: 30px;
+      color: #7875B5;
+    }
+  form a{
+    padding-bottom:10px ;
+    color: #000;
+    font-weight: bold;
+  }
+
+    .login__input {
+      border: none;
+      border-bottom: 2px solid #D1D1D4;
+      background: none;
+      /* // padding: 10px; */
+      /* // padding-left: 24px; */
+      font-weight: 500;
+      width: 200px;
+      font-size: large;
+
+      /* // transition: .2s; */
+    }
+    .login__field label{
+      padding-left: 5px;
+      font-weight: bold;
+    }
+
+    .login__input::placeholder {
+      color: #000000a4;
+    }
+
+    .login__input:active,
+    .login__input:focus,
+    .login__input:hover {
+      outline: none;
+      border-bottom-color: #6A679E;
+    }
+
+    .login__submit {
+      padding: 10px 100px;
+      background: #000;
+      color: #FFF;
+      box-shadow: 5px 4px #fff;
+    }
+    .button__text{
+      font-size: large;
+    }
+
+ </style>
+</head>
+
+<body>
+
+
+  <div class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">products</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+
+    <form class="login">
+      <h1>Login Form</h1>
+      <img
+        src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZ07IJgrr6yRPGrgge6s9SLKpcSqA_tTWP9TBLF4lssSbBnFnQ59bkJyRYrUjAlWeyTdWDktiOGP9-QUpk9pXMUgQQO=w2880-h1398"
+        alt="nothing">
+
+      <div class="login__field">
+        <i>Username</i>
+        <input type="text" class="login__input" placeholder="Enter Username">
+      </div>
+      <div class="login__field">
+        <i>Password</i>
+        <input type="password" class="login__input" placeholder="Enter Password">
+      </div>
+      <button class="button login__submit">
+        <span class="button__text">Login</span>
+      </button>
+      <div class="login__field">
+        <input type="checkbox" name="check" value="value">
+        <label for="check">  Remember me</label><br>
+      </div>
+      
+        <a href="">forgot password</a>
+      
+
+      <button class="button login__submit">
+        <span class="button__text">Cancel</span>
+      </button>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>
